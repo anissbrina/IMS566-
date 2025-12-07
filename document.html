@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Tracker - Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="document.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="dashboard.html">Internship Tracker</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="application.html">Application</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="document.html">Document</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="index.html">Logout</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="page-container">
+
+    <div class="overview-header">
+    <h2><b>Document Overview</b></h2>
+
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </div>
+
+        <p>Welcome to your internship tracking dashboard.</p>
+
+<div class="document-center">
+    <h3><b>📂 Document Center</b></h3>
+    <p>Upload and manage your internship-related documents here.</p>
+
+    <div class="upload-section">
+        <input type="file" id="fileInput" />
+        <select id="docCategory">
+            <option value="">Select Category</option>
+            <option value="Resume">Resume</option>
+            <option value="Cover Letter">Cover Letter</option>
+            <option value="Recommendation Letter">Recommendation Letter</option>
+            <option value="Portfolio">Portfolio</option>
+            <option value="Offer Letter">Offer Letter</option>
+            <option value="Internship Confirmation Letter">Internship Confirmation Letter</option>
+        </select>
+
+    
+        <button id="uploadBtn">Upload</button>
+    </div>
+
+    <h4><b>Uploaded Documents</b></h4>
+    <ul id="fileList"></ul>
+
+    <button id="submitBtn" class="submitAll">Submit All Documents</button>
+</div>
+
+        <div class="history-section">
+            <h3><b>📜 History Submission</b></h3>
+            <ul id="historyList"></ul>
+        </div>
+
+</div>
+
+    <div class="footer">
+        Internship Tracker System © 2025 • IMS566 Project
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="document.js"></script>
+<script src="theme.js"></script>
+</body>
+</html
